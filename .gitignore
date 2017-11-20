@@ -2,3 +2,4 @@ amazondataset/*.json
 Deep-Learning-(Adaptive-Computation-and-Machine-Learning-series)-Ian-Goodfellow.pdf
 **/.DS_Store
 .ipynb_checkpoints
+*.pyc
