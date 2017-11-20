@@ -81,9 +81,13 @@ def printword(pos_list,neg_list,reviews):
 def findword(word,reviews):
     count=0
     for review in reviews:
-        words=review.split()
-        if word in words:
-            print(review)
-            count+=1
-        if count>=10:
-            break
+        lowercase_reviews = review.lower()
+        words=lowercase_reviews.split()
+        for item in words:
+            if word in item:
+                count += 1
+                break
+        if count > 500:
+            return True
+    else:        
+        return False
